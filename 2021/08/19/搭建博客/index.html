@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>搭建博客 | 你没有天线我们无法交流</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考文章:使用hexo+github免费搭建个人博客网站超详细教程. Start注册域名创建仓库安装nodejs安装hexo">
+  <meta name="description" content="参考文章:hexo+github. 开始注册域名创建仓库安装nodejs验证安装是否成功(其中npm为安装nodejs时附带,git安装自行百度) 123$ node -v$ npm -v$ git --version  安装Hexo12$ npm install hexo-cli -g$ hexo -v  初始化Hexo新建文件夹myblog，右键git bash here 1234$ hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建博客">
 <meta property="og:url" content="http://example.com/2021/08/19/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="你没有天线我们无法交流">
-<meta property="og:description" content="参考文章:使用hexo+github免费搭建个人博客网站超详细教程. Start注册域名创建仓库安装nodejs安装hexo">
+<meta property="og:description" content="参考文章:hexo+github. 开始注册域名创建仓库安装nodejs验证安装是否成功(其中npm为安装nodejs时附带,git安装自行百度) 123$ node -v$ npm -v$ git --version  安装Hexo12$ npm install hexo-cli -g$ hexo -v  初始化Hexo新建文件夹myblog，右键git bash here 1234$ hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-08-19T09:34:24.000Z">
-<meta property="article:modified_time" content="2021-08-19T09:42:09.090Z">
+<meta property="article:modified_time" content="2021-08-19T10:52:04.365Z">
 <meta property="article:author" content="li">
 <meta name="twitter:card" content="summary">
   
@@ -59,8 +59,6 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
-	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -69,8 +67,6 @@
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -81,13 +77,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/Alucard-9" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/shi-liu-ye-31-12" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/176781832" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
 		</nav>
@@ -115,20 +109,16 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/Alucard-9" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/shi-liu-ye-31-12" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/176781832" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -137,9 +127,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -174,8 +162,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>参考文章:<a target="_blank" rel="noopener" href="https://blog.csdn.net/wapchief/article/details/54602515?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162935875116780366584586%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162935875116780366584586&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-54602515.first_rank_v2_pc_rank_v29&utm_term=hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99&spm=1018.2226.3001.4187">使用hexo+github免费搭建个人博客网站超详细教程</a>.</p>
-<h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><h3 id="注册域名"><a href="#注册域名" class="headerlink" title="注册域名"></a>注册域名</h3><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3>
+        <p>参考文章:<a target="_blank" rel="noopener" href="https://blog.csdn.net/wapchief/article/details/54602515?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162935875116780366584586%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162935875116780366584586&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-54602515.first_rank_v2_pc_rank_v29&utm_term=hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99&spm=1018.2226.3001.4187">hexo+github</a>.</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="注册域名"><a href="#注册域名" class="headerlink" title="注册域名"></a>注册域名</h3><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装<a target="_blank" rel="noopener" href="https://nodejs.org/en/">nodejs</a></h3><p>验证安装是否成功(其中npm为安装nodejs时附带,git安装自行百度)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">$ npm -v</span><br><span class="line">$ git --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029">初始化Hexo</a></h3><p>新建文件夹myblog，右键git bash here</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>此时在浏览器输入localhost:4000就可以看到生成的博客页面</p>
+<h3 id="修改内容"><a href="#修改内容" class="headerlink" title="修改内容"></a>修改内容</h3><p>参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a><br>注意需要如下修改</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/Alucard-9/Alucard-9.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署项目"><a href="#部署项目" class="headerlink" title="部署项目"></a>部署项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">安装部署工具，方便以后更新</span><br><span class="line">$ npm install hexo-deployer-git -save</span><br><span class="line">初始化本地仓库</span><br><span class="line">$ git init</span><br><span class="line">连接远程仓库</span><br><span class="line">$ git remote add origin https://github.com/Alucard-9/Alucard-9.github.io.git</span><br><span class="line">发布hexo到github page(清空、刷新、部署)</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<h3 id="Github-Pages设置"><a href="#Github-Pages设置" class="headerlink" title="Github Pages设置"></a>Github Pages<a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">设置</a></h3><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>哒哒哒</p>
+
       
 
       
@@ -354,8 +356,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
-      
-      
     
       
       
@@ -367,15 +367,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -439,43 +437,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     
