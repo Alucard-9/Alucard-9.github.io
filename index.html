@@ -150,6 +150,87 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-thinkphp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/28/thinkphp/">thinkphp</a>
+    </h1>
+  
+
+        
+        <a href="/2021/08/28/thinkphp/" class="archive-article-date">
+  	<time datetime="2021-08-28T10:40:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.kancloud.cn/manual/thinkphp6_0/1037479">ThinkPHP6.0完全开发手册</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12E411y7u8">学习视频</a></p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="URL正确跳转"><a href="#URL正确跳转" class="headerlink" title="URL正确跳转"></a>URL正确跳转</h3><p>两种方法</p>
+<h4 id="1-设置伪静态，即URL重写"><a href="#1-设置伪静态，即URL重写" class="headerlink" title="1.设置伪静态，即URL重写"></a>1.设置伪静态，即<a target="_blank" rel="noopener" href="https://www.kancloud.cn/manual/thinkphp6_0/1037488">URL重写</a></h4><p>将以下内容保存为.htaccess文件放到应用入口文件的同级目录下（ThinkPHP自动创建，在public文件下）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Apache</span><br><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">  Options +FollowSymlinks -Multiviews</span><br><span class="line">  RewriteEngine On</span><br><span class="line"></span><br><span class="line">  RewriteCond %&#123;REQUEST_FILENAME&#125; !-d</span><br><span class="line">  RewriteCond %&#123;REQUEST_FILENAME&#125; !-f</span><br><span class="line">  RewriteRule ^(.*)$ index.php/<span class="variable">$1</span> [QSA,PT,L]</span><br><span class="line">&lt;/IfModule&gt;</span><br><span class="line">Nginx</span><br><span class="line"><span class="keyword">if</span> (!-e <span class="variable">$request_filename</span>)&#123;</span><br><span class="line">rewrite ^(.*)$ /index.php?s=<span class="variable">$1</span> last; <span class="built_in">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-跳转地址加入-s"><a href="#2-跳转地址加入-s" class="headerlink" title="2.跳转地址加入?s="></a>2.跳转地址加入?s=</h4><p>如HTML中的&#60;a&#62;标签的属性href=”Index/main”在未设置伪静态时访问出现404错误，改成href=”?s=Index/main”即可正常访问</p>
+<h5 id="关于验证码问题，未设置伪静态时图片无法显示（同样404错误）"><a href="#关于验证码问题，未设置伪静态时图片无法显示（同样404错误）" class="headerlink" title="关于验证码问题，未设置伪静态时图片无法显示（同样404错误）"></a>关于验证码问题，未设置伪静态时图片无法显示（同样404错误）</h5><p>在vendor\topthink\think-captcha\src\helper.php的captcha_img方法中更改return语句</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">return</span> <span class="string">&quot;&lt;img src=&#x27;?s=&#123;<span class="variable">$src</span>&#125;&#x27; alt=&#x27;captcha&#x27; &quot;</span> . <span class="variable">$domid</span> . <span class="string">&quot; onclick=&#x27;this.src=\&quot;?s=&#123;<span class="variable">$src</span>&#125;?\&quot;+Math.random();&#x27; /&gt;&quot;</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>哒哒哒</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">thinkphp</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/08/28/thinkphp/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-搭建博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -184,7 +265,7 @@
 
 <h3 id="部署项目"><a href="#部署项目" class="headerlink" title="部署项目"></a>部署项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">安装部署工具，方便以后更新</span><br><span class="line">$ npm install hexo-deployer-git -save</span><br><span class="line">初始化本地仓库</span><br><span class="line">$ git init</span><br><span class="line">连接远程仓库</span><br><span class="line">$ git remote add origin https://github.com/Alucard-9/Alucard-9.github.io.git</span><br><span class="line">发布hexo到github page(清空、刷新、部署)</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 
-<h3 id="Github-Pages设置"><a href="#Github-Pages设置" class="headerlink" title="Github Pages设置"></a>Github Pages<a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">设置</a></h3><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>设置yilia背景<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45857922/article/details/113545469?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.control&spm=1001.2101.3001.4242">参考一</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41287260/article/details/103050813">参考二</a><br>哒哒哒</p>
+<h3 id="Github-Pages设置"><a href="#Github-Pages设置" class="headerlink" title="Github Pages设置"></a>Github Pages<a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">设置</a></h3><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>设置yilia背景<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45857922/article/details/113545469?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.control&spm=1001.2101.3001.4242">参考一</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41287260/article/details/103050813">参考二</a></p>
 
       
 
@@ -193,6 +274,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GitHub</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -389,6 +485,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitHub</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">thinkphp</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
