@@ -314,6 +314,7 @@ html {
 }
 
 body {
+	cursor: url("http://qykz8qw1j.hn-bkt.clouddn.com/picGo/Arrow.cur"),default;
 	margin: 0;
 	font-size: 14px;
 	font-family: Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;
@@ -322,7 +323,7 @@ body {
 	background-color: #f6d6f6;
 	/* background-color:#fff; */
 	/*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url('http://qykz8qw1j.hn-bkt.clouddn.com/picGo/82213401_p1.jpg?image)') no-repeat 0% 0%/ cover; */
+    url('http://qykz8qw1j.hn-bkt.clouddn.com/picGo/82213401_p1.jpg?image') no-repeat 0% 0%/ cover; */
 	min-height: 100%
 }
 
@@ -348,7 +349,8 @@ progress {
 a {
 	background: transparent;
 	text-decoration: none;
-	color: #08c
+	color: #08c;
+	cursor: url("http://qykz8qw1j.hn-bkt.clouddn.com/picGo/Handwriting.cur"),default;
 }
 
 a:active {
@@ -519,8 +521,9 @@ table {
 td,th {
 	padding: 0
 }
-
+/* 字体修改部分 */
 blockquote,figure,form,h1,h2,h3,h4,h5,h6,p {
+	font-family: initial;
 	margin: 0
 }
 
@@ -812,7 +815,7 @@ body {
 /*background:#fff;*/
 	/*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url('http://bucket836.oss-cn-shenzhen.aliyuncs.com/wallpaper/381535373.jpeg') no-repeat 0% 20%/ cover;*/
-    background: url('https://i.loli.net/2021/08/30/LyZsCA1obIdr4uF.png') no-repeat 0% 0%/ cover;
+    background: url('http://qykz8qw1j.hn-bkt.clouddn.com/picGo/82672875_p0.png') no-repeat 0% 0%/ cover;
 	width: 300px;
 	position: fixed;
 	opacity: 1;
@@ -2042,6 +2045,7 @@ pre .css~* .id,pre .id {
 }
 
 .article-inner h1.article-title,.article-title {
+	font-family: initial;
 	color: #696969;
 	margin-left: 0;
 	font-weight: 300;
