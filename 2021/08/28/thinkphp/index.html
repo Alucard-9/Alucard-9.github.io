@@ -16,7 +16,7 @@
 <meta property="og:description" content="ThinkPHP6.0完全开发手册学习视频 开始URL正确跳转两种方法 1.设置伪静态，即URL重写将以下内容保存为.htaccess文件放到应用入口文件的同级目录下（ThinkPHP自动创建，在public文件下） 12345678910111213Apache&lt;IfModule mod_rewrite.c&gt;  Options +FollowSymlinks -Multiviews">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-08-28T10:40:56.000Z">
-<meta property="article:modified_time" content="2021-08-28T11:21:14.962Z">
+<meta property="article:modified_time" content="2021-09-14T07:52:59.932Z">
 <meta property="article:author" content="li">
 <meta property="article:tag" content="thinkphp">
 <meta name="twitter:card" content="summary">
@@ -52,7 +52,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://i.loli.net/2021/08/30/WkGQnAu4O639jNS.jpg" class="js-avatar">
+			<img src="http://qykz8qw1j.hn-bkt.clouddn.com/picGo/wife_tiny.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -110,7 +110,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://i.loli.net/2021/08/30/WkGQnAu4O639jNS.jpg" class="js-avatar">
+				<img src="http://qykz8qw1j.hn-bkt.clouddn.com/picGo/wife_tiny.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -180,6 +180,9 @@
 <h4 id="2-跳转地址加入-s"><a href="#2-跳转地址加入-s" class="headerlink" title="2.跳转地址加入?s="></a>2.跳转地址加入?s=</h4><p>如HTML中的&#60;a&#62;标签的属性href=”Index/main”在未设置伪静态时访问出现404错误，改成href=”?s=Index/main”即可正常访问</p>
 <h5 id="关于验证码问题，未设置伪静态时图片无法显示（同样404错误）"><a href="#关于验证码问题，未设置伪静态时图片无法显示（同样404错误）" class="headerlink" title="关于验证码问题，未设置伪静态时图片无法显示（同样404错误）"></a>关于验证码问题，未设置伪静态时图片无法显示（同样404错误）</h5><p>在vendor\topthink\think-captcha\src\helper.php的captcha_img方法中更改return语句</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">return</span> <span class="string">&quot;&lt;img src=&#x27;?s=&#123;<span class="variable">$src</span>&#125;&#x27; alt=&#x27;captcha&#x27; &quot;</span> . <span class="variable">$domid</span> . <span class="string">&quot; onclick=&#x27;this.src=\&quot;?s=&#123;<span class="variable">$src</span>&#125;?\&quot;+Math.random();&#x27; /&gt;&quot;</span>;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="phpmailer"><a href="#phpmailer" class="headerlink" title="phpmailer"></a>phpmailer</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer require phpmailer/phpmailer</span><br></pre></td></tr></table></figure>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><h5 id="邮箱发送验证码"><a href="#邮箱发送验证码" class="headerlink" title="邮箱发送验证码"></a>邮箱发送验证码</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">public <span class="keyword">function</span> <span class="function"><span class="title">sendMail</span></span>()&#123;</span><br><span class="line">  <span class="variable">$mailCode</span>=<span class="variable">$this</span>-&gt;createMailCheckCode();</span><br><span class="line">  session(<span class="string">&quot;mailCode&quot;</span>,<span class="variable">$mailCode</span>);</span><br><span class="line">  <span class="variable">$username</span>=session(<span class="string">&quot;registerData&quot;</span>)[<span class="string">&quot;username&quot;</span>];</span><br><span class="line">  <span class="variable">$receiveMailAddress</span>=session(<span class="string">&quot;registerData&quot;</span>)[<span class="string">&quot;email&quot;</span>];</span><br><span class="line">  try &#123;</span><br><span class="line">    <span class="variable">$mail</span> = new PHPMailer();</span><br><span class="line">    <span class="variable">$mail</span>-&gt;isSMTP();</span><br><span class="line">    <span class="variable">$mail</span>-&gt;CharSet = <span class="string">&quot;utf8&quot;</span>;</span><br><span class="line">    <span class="variable">$mail</span>-&gt;Host = <span class="string">&quot;smtp.163.com&quot;</span>;// 发送方的SMTP服务器地址</span><br><span class="line">    <span class="variable">$mail</span>-&gt;SMTPAuth = <span class="literal">true</span>;// 是否使用身份验证</span><br><span class="line">    <span class="variable">$mail</span>-&gt;Username = <span class="string">&quot;&quot;</span>;// 发送方的163邮箱用户名</span><br><span class="line">    <span class="variable">$mail</span>-&gt;Password = <span class="string">&quot;&quot;</span>;// 发送方的邮箱密码,客户端授权密码</span><br><span class="line">    <span class="variable">$mail</span>-&gt;SMTPSecure = <span class="string">&quot;ssl&quot;</span>;// 使用ssl协议方式</span><br><span class="line">    <span class="variable">$mail</span>-&gt;Port = 465;// 163邮箱的ssl协议方式端口号是465/994</span><br><span class="line">    <span class="variable">$mail</span>-&gt;setFrom(<span class="string">&quot;&quot;</span>,<span class="string">&quot;Ori官方&quot;</span>);// 设置发件人信息</span><br><span class="line">    <span class="variable">$mail</span>-&gt;addAddress(<span class="variable">$receiveMailAddress</span>,<span class="string">&#x27;用户&#x27;</span>);// 设置收件人信息</span><br><span class="line">    //<span class="variable">$mail</span>-&gt;addReplyTo(<span class="string">&quot;***@qq.com&quot;</span>,<span class="string">&quot;回复人姓名&quot;</span>);//</span><br><span class="line">    //<span class="variable">$mail</span>-&gt;addCC(<span class="string">&quot;xxx@163.com&quot;</span>);// 设置邮件抄送人</span><br><span class="line">    //<span class="variable">$mail</span>-&gt;addBCC(<span class="string">&quot;xxx@163.com&quot;</span>);// 设置秘密抄送人</span><br><span class="line">    //<span class="variable">$mail</span>-&gt;addAttachment(<span class="string">&quot;bug0.jpg&quot;</span>);// 添加附件</span><br><span class="line">    <span class="variable">$mail</span>-&gt;Subject = <span class="string">&quot;Ori验证码邮件&quot;</span>;// 邮件标题</span><br><span class="line">    <span class="variable">$mail</span>-&gt;isHTML(<span class="literal">true</span>);// 邮件正文为html格式</span><br><span class="line">    // 邮件正文</span><br><span class="line">    <span class="variable">$mail</span>-&gt;Body = ;</span><br><span class="line">    <span class="keyword">if</span>(!<span class="variable">$mail</span>-&gt;send())&#123;// 发送邮件</span><br><span class="line">      <span class="built_in">echo</span> <span class="string">&quot;Mailer Error: &quot;</span>.<span class="variable">$mail</span>-&gt;ErrorInfo;// 输出错误信息</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">return</span> \view(<span class="string">&quot;mailCode&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;catch (ValidateException <span class="variable">$exception</span>)&#123;</span><br><span class="line">  dump(<span class="variable">$exception</span>-&gt;getError());</span><br><span class="line">&#125;</span><br><span class="line">alerts(<span class="string">&quot;发送失败，请稍后再试!&quot;</span>);</span><br><span class="line"><span class="built_in">return</span> \view(<span class="string">&quot;register&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">//生成随机验证码</span><br><span class="line">public <span class="keyword">function</span> createMailCheckCode(<span class="variable">$length</span> = 6)&#123;</span><br><span class="line">  <span class="variable">$min</span> = pow(10 , (<span class="variable">$length</span> - 1));</span><br><span class="line">  <span class="variable">$max</span> = pow(10, <span class="variable">$length</span>) - 1;</span><br><span class="line">  <span class="built_in">return</span> rand(<span class="variable">$min</span>, <span class="variable">$max</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>哒哒哒</p>
 
       
@@ -284,6 +287,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/09/07/Tomcat/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Tomcat
+        
+      </div>
+    </a>
   
   
     <a href="/2021/08/19/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
@@ -410,6 +422,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
