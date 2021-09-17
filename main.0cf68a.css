@@ -1286,6 +1286,8 @@ pre .css~* .id,pre .id {
 }
 
 .archive-article-date {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
 	color: #999;
 	margin-right: 7.6923%;
 	float: right
@@ -2036,7 +2038,8 @@ pre .css~* .id,pre .id {
 	border: 1px solid #ddd;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-	background: rgba(255,255,255,.5);
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.85);
 	transition: all .2s ease-in
 }
 
@@ -2046,17 +2049,23 @@ pre .css~* .id,pre .id {
 
 .article-inner h1.article-title,.article-title {
 	font-family: initial;
-	color: #696969;
+	/* color: #696969; */
+	color: rgb(145, 78, 151);
 	margin-left: 0;
-	font-weight: 300;
+	/* font-weight: 300; */
+	font-weight: 550;
 	line-height: 35px;
 	margin-bottom: 20px;
 	font-size: 26px;
 	transition: color .3s
 }
 
+.article-title:hover{
+	color: rgb(148, 109, 151);
+}
+
 .article-header {
-	border-left: 5px solid #4d4d4d;
+	/* border-left: 5px solid #4d4d4d; */
 	padding: 30px 0 15px 25px;
 	padding-left: 7.6923%
 }
