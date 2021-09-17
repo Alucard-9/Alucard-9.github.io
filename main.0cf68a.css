@@ -320,11 +320,24 @@ body {
 	font-family: Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;
 	line-height: 1.5;
 	color: #333;
-	background-color: #f6d6f6;
 	/* background-color:#fff; */
 	/*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
     url('http://qykz8qw1j.hn-bkt.clouddn.com/picGo/82213401_p1.jpg?image') no-repeat 0% 0%/ cover; */
+	background: linear-gradient(-45deg, #f78585, #b6e5f8);
+	animation: gradientBG 8s ease infinite;
+	background-size: 400% 400%;
 	min-height: 100%
+}
+@keyframes gradientBG{
+	0% {
+	background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
@@ -2057,10 +2070,11 @@ pre .css~* .id,pre .id {
 	line-height: 35px;
 	margin-bottom: 20px;
 	font-size: 26px;
-	transition: color .3s
+	transition: 0.3s
 }
 
 .article-title:hover{
+	font-size: 28px;
 	color: rgb(148, 109, 151);
 }
 
@@ -2097,17 +2111,21 @@ pre .css~* .id,pre .id {
 }
 
 .article-more-link a {
-	background: #4d4d4d;
+	background: rgb(145, 78, 151);
 	color: #fff;
-	font-size: 12px;
+	font-size: 15px;
 	padding: 5px 8px;
 	line-height: 16px;
-	border-radius: 2px;
-	transition: background .3s
+	border: none;
+	border-radius: 5px;
+	transition: 0.3s
 }
 
 .article-more-link a:hover {
-	background: #3c3c3c
+	font-size: 17px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background: #000;
 }
 
 .article-more-link a.hidden {

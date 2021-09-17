@@ -1,6 +1,0 @@
-主页面
-body(316)
-文章区域右上角日期
-archive-article-date
-文章标题
-article-inner h1.article-title,.article-title
