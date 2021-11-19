@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.liiz.top/2021/09/16/study/</loc>
+    <lastmod>2021-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.liiz.top/2021/11/16/mybatis/</loc>
+    <lastmod>2021-11-16</lastmod>
+  </url>
+  <url>
     <loc>https://blog.liiz.top/2021/09/30/tomcat/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2021-11-16</lastmod>
   </url>
   <url>
     <loc>https://blog.liiz.top/2021/08/19/myblog/</loc>
     <lastmod>2021-10-06</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.liiz.top/2021/09/16/study/</loc>
-    <lastmod>2021-10-01</lastmod>
   </url>
   <url>
     <loc>https://blog.liiz.top/2021/09/19/hexo%E4%B8%BB%E9%A2%98%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/</loc>
