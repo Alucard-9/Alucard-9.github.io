@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.liiz.top/2021/09/16/study/</loc>
+    <loc>https://blog.liiz.top/2021/09/19/hexo%E4%B8%BB%E9%A2%98%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/</loc>
     
-    <lastmod>2021-11-16</lastmod>
+    <lastmod>2021-12-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/2021/12/10/ssm%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2021-12-11</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.liiz.top/2021/11/16/mybatis/</loc>
     
-    <lastmod>2021-11-16</lastmod>
+    <lastmod>2021-12-11</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.liiz.top/2021/09/30/tomcat/</loc>
     
-    <lastmod>2021-11-16</lastmod>
+    <lastmod>2021-12-10</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>https://blog.liiz.top/2021/08/19/myblog/</loc>
     
     <lastmod>2021-10-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.liiz.top/2021/09/19/hexo%E4%B8%BB%E9%A2%98%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/</loc>
-    
-    <lastmod>2021-10-01</lastmod>
     
   </url>
   
@@ -50,17 +50,10 @@
     
   </url>
   
-  <url>
-    <loc>https://blog.liiz.top/2021/09/16/wordpress/</loc>
-    
-    <lastmod>2021-09-17</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://blog.liiz.top/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,63 +61,63 @@
   
   <url>
     <loc>https://blog.liiz.top/tags/Hexo/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.liiz.top/tags/yilia/</loc>
-    <lastmod>2021-11-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.liiz.top/tags/Markdown/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.liiz.top/tags/mybatis/</loc>
-    <lastmod>2021-11-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.liiz.top/tags/SSM/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.liiz.top/tags/GitHub/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <lastmod>2021-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/tags/Markdown/</loc>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.liiz.top/tags/ThinkPHP/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.liiz.top/tags/Tomcat/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.liiz.top/tags/WordPress/</loc>
-    <lastmod>2021-11-19</lastmod>
+    <loc>https://blog.liiz.top/tags/Spring/</loc>
+    <lastmod>2021-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/tags/Spring-MVC/</loc>
+    <lastmod>2021-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
