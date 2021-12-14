@@ -60,28 +60,7 @@
 
   
   <url>
-    <loc>https://blog.liiz.top/tags/Markdown/</loc>
-    <lastmod>2021-12-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.liiz.top/tags/mybatis/</loc>
-    <lastmod>2021-12-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.liiz.top/tags/Hexo/</loc>
-    <lastmod>2021-12-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.liiz.top/tags/GitHub/</loc>
     <lastmod>2021-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -95,7 +74,21 @@
   </url>
   
   <url>
-    <loc>https://blog.liiz.top/tags/Tomcat/</loc>
+    <loc>https://blog.liiz.top/tags/mybatis/</loc>
+    <lastmod>2021-12-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/tags/Markdown/</loc>
+    <lastmod>2021-12-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/tags/GitHub/</loc>
     <lastmod>2021-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -103,6 +96,13 @@
   
   <url>
     <loc>https://blog.liiz.top/tags/ThinkPHP/</loc>
+    <lastmod>2021-12-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/tags/Tomcat/</loc>
     <lastmod>2021-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
