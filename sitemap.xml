@@ -88,13 +88,6 @@
   </url>
   
   <url>
-    <loc>https://blog.liiz.top/tags/Linux/</loc>
-    <lastmod>2022-04-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.liiz.top/tags/Markdown/</loc>
     <lastmod>2022-04-26</lastmod>
     <changefreq>daily</changefreq>
@@ -102,7 +95,7 @@
   </url>
   
   <url>
-    <loc>https://blog.liiz.top/tags/GitHub/</loc>
+    <loc>https://blog.liiz.top/tags/Linux/</loc>
     <lastmod>2022-04-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -110,6 +103,13 @@
   
   <url>
     <loc>https://blog.liiz.top/tags/Mybatis/</loc>
+    <lastmod>2022-04-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/tags/GitHub/</loc>
     <lastmod>2022-04-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
