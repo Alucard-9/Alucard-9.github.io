@@ -88,7 +88,7 @@
   </url>
   
   <url>
-    <loc>https://blog.liiz.top/tags/Mybatis/</loc>
+    <loc>https://blog.liiz.top/tags/Linux/</loc>
     <lastmod>2022-04-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -109,14 +109,7 @@
   </url>
   
   <url>
-    <loc>https://blog.liiz.top/tags/Linux/</loc>
-    <lastmod>2022-04-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.liiz.top/tags/Tomcat/</loc>
+    <loc>https://blog.liiz.top/tags/Mybatis/</loc>
     <lastmod>2022-04-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -124,6 +117,13 @@
   
   <url>
     <loc>https://blog.liiz.top/tags/ThinkPHP/</loc>
+    <lastmod>2022-04-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.liiz.top/tags/Tomcat/</loc>
     <lastmod>2022-04-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
